@@ -28,6 +28,19 @@ class AppCommon {
     }
     private init() {
     }
+    func showLoginByRemove(_ controllerToDismiss: UIViewController?) {
+        UIView.animate(withDuration: 0.3, animations: {
+            controllerToDismiss?.view.alpha = 0
+        }) { (_) in
+            let loginController = LoginViewController.getController()
+            LoginRouter.addContracts(loginController)
+            //transition(fromVC: viewController, animationDuration: 0.5, toVC: loginController)
+            let appdelegate = UIApplication.shared.delegate as! AppDelegate
+            appdelegate.window?.rootViewController = loginController
+        }
+    }
+    func launchHomeByRemove(_ controllerToDismiss: UIViewController?) {
+    }
     // MARK: Activity View
     func isShowingIndicator() -> Bool {
         if self.activityView != nil {
@@ -70,12 +83,44 @@ class AppCommon {
     }
     // MARK: - Alert methods
     func showErrorAlert(error: MOError, onViewController viewController: UIViewController? = nil, completionHandler: AlertButtonActionHandler? = nil) {
-
+        //let title = "title.app".localized()
+        if UIApplication.shared.keyWindow == nil { printError("window not created yet")
+            return }
+        let errorMessage: String = error.errorDescription
+        AppCommon.sharedInstance.showSimpleAlert(message: errorMessage, onViewController: viewController, withActionHandler: completionHandler)
     }
-    func showSimpleAlert(message: String? = nil, onViewController viewController: UIViewController? = nil, withActionHandler actionHandler: AlertButtonActionHandler? = .none) {
-
+    // swiftlint:disable line_length
+    func showSimpleAlert(_ title: String = "title.app".localized(), message: String? = nil, onViewController viewController: UIViewController? = nil, buttonTitle: String = "alert.button.ok".localized(), withActionHandler actionHandler: AlertButtonActionHandler? = .none) {
+        let alertController = UIAlertController(title: title, message: message, preferredStyle: .alert)
+        let okAction = UIAlertAction(title: buttonTitle, style: .default) { (_) in
+            actionHandler?()
+        }
+        alertController.addAction(okAction)
+        if let sourceController = viewController {
+            sourceController.present(alertController, animated: true)
+        } else {
+            UIApplication.topViewController()?.present(alertController, animated: true)
+        }
     }
     // swiftlint:disable line_length
     func showConfirmationAlert(_ title: String = "title.app".localized(), message: String, onViewController: UIViewController? = nil, okButtonTitle: String? = "alert.button.yes".localized(), cancelButtonTitle: String? = "alert.button.cancel".localized(), okButtonAction: AlertButtonActionHandler?, cancelButtonAction: AlertButtonActionHandler? = nil) {
+        let title = "title.app".localized()
+        let alertController = UIAlertController(title: title, message: message, preferredStyle: .alert)
+        let okAction = UIAlertAction(title: okButtonTitle, style: .default) { (_) in
+            okButtonAction?()
+        }
+        alertController.addAction(okAction)
+        let cancelAction = UIAlertAction(title: cancelButtonTitle, style: .cancel) { (_) in
+            cancelButtonAction?()
+        }
+        alertController.addAction(cancelAction)
+        alertController.preferredAction = okAction
+        if let sourceController = onViewController {
+            sourceController.present(alertController, animated: true)
+        } else {
+            //+20180108
+            let appdelegate = UIApplication.shared.delegate as! AppDelegate
+            appdelegate.window?.rootViewController?.present(alertController, animated: true)
+        }
     }
 }

@@ -14,25 +14,7 @@ protocol NSManagedObjectHelper {
 extension NSManagedObject: NSManagedObjectHelper {
 }
 extension NSManagedObjectHelper where Self: NSManagedObject {
-    static func createObjectInMainThread() -> Self? {
-        let managedContext = ZcoCoreDataHelper.sharedInstance.persistentContainer.viewContext
-        return NSEntityDescription.insertNewObject(forEntityName: String(describing: self), into: managedContext) as? Self
-    }
-    static func fetchObjects(sortDescriptors: [NSSortDescriptor]? = nil, predicate: NSPredicate? = nil) -> [Self]? {
-        
-        var objs: [Self]?
-        ZcoCoreDataHelper.sharedInstance.performForegroundSyncTask { (context) in
-            let employeesFetch: NSFetchRequest<Self> = NSFetchRequest(entityName: String(describing: self))
-            employeesFetch.sortDescriptors = sortDescriptors
-            employeesFetch.predicate = predicate
-            do {
-                objs = try context.fetch(employeesFetch)
-            } catch {
-                fatalError("Failed to fetch employees: \(error)")
-            }
-        }
-        return objs
-    }
+
     static func fetchObjects(sortDescriptors: [NSSortDescriptor]? = nil, predicate: NSPredicate? = nil, context: NSManagedObjectContext) -> [Self]? {
         
         var objs: [Self]?
@@ -47,8 +29,7 @@ extension NSManagedObjectHelper where Self: NSManagedObject {
         return objs
     }
 
-    static func removeAllObjects() {
-        let managedContext = ZcoCoreDataHelper.sharedInstance.persistentContainer.viewContext
+    static func removeAllObjectsInContext(_ managedContext: NSManagedObjectContext) {
         let request: NSFetchRequest<NSFetchRequestResult> = Self.fetchRequest()
         let deleteRequest = NSBatchDeleteRequest(fetchRequest: request)
         do {
@@ -56,18 +37,5 @@ extension NSManagedObjectHelper where Self: NSManagedObject {
         } catch let error as NSError {
             printError(error)
         }
-    }
-    static func removeAllObjects(context: NSManagedObjectContext) {
-        let request: NSFetchRequest<NSFetchRequestResult> = Self.fetchRequest()
-        let deleteRequest = NSBatchDeleteRequest(fetchRequest: request)
-        do {
-            try context.execute(deleteRequest)
-        } catch let error as NSError {
-            printError(error)
-        }
-    }
-    func delete() {
-        let managedContext = ZcoCoreDataHelper.sharedInstance.persistentContainer.viewContext
-        managedContext.delete(self)
     }
 }

@@ -40,6 +40,10 @@ extension UIViewController {
         addChildViewController(child)
         child.didMove(toParentViewController: self)
     }
+    func releaseMeFromParent() {
+        self.view.removeFromSuperview()
+        self.removeFromParentViewController()
+    }
     func transition(to child: UIViewController, completion: ((Bool) -> Void)? = nil) {
         let duration = 0.3
         let current = childViewControllers.last

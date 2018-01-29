@@ -47,4 +47,8 @@ class BaseViewController: UIViewController {
         router?.prepare(for: segue, sender: sender)
     }
 }
-
+extension BaseViewController: StoryboardIdentifiable {
+    @objc class func storyboard() -> UIStoryboard {
+        return UIStoryboard.main
+    }
+}
