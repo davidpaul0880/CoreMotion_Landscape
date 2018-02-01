@@ -18,7 +18,6 @@
 		68B8F0BF2017F51500074081 /* FontExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68B8F0802017F51500074081 /* FontExtension.swift */; };
 		68B8F0C02017F51500074081 /* NotificationExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68B8F0812017F51500074081 /* NotificationExtension.swift */; };
 		68B8F0C12017F51500074081 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68B8F0822017F51500074081 /* StringExtension.swift */; };
-		68B8F0C22017F51500074081 /* TextFieldExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68B8F0832017F51500074081 /* TextFieldExtension.swift */; };
 		68B8F0C32017F51500074081 /* UserDefaultsEtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68B8F0842017F51500074081 /* UserDefaultsEtension.swift */; };
 		68B8F0C42017F51500074081 /* BititReelNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68B8F0872017F51500074081 /* BititReelNavigationController.swift */; };
 		68B8F0C52017F51500074081 /* BLTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68B8F0882017F51500074081 /* BLTextField.swift */; };
@@ -28,7 +27,6 @@
 		68B8F0C92017F51500074081 /* Logging.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68B8F08F2017F51500074081 /* Logging.swift */; };
 		68B8F0CA2017F51500074081 /* ZCOKeyboardManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68B8F0912017F51500074081 /* ZCOKeyboardManager.swift */; };
 		68B8F0CB2017F51500074081 /* NSManagedObjectHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68B8F0932017F51500074081 /* NSManagedObjectHelper.swift */; };
-		68B8F0CC2017F51500074081 /* ZcoCoreDataHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68B8F0942017F51500074081 /* ZcoCoreDataHelper.swift */; };
 		68B8F0CD2017F51500074081 /* MOError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68B8F0962017F51500074081 /* MOError.swift */; };
 		68B8F0CE2017F51500074081 /* ApplicationExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68B8F0982017F51500074081 /* ApplicationExtension.swift */; };
 		68B8F0CF2017F51500074081 /* DateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68B8F0992017F51500074081 /* DateExtension.swift */; };
@@ -61,14 +59,7 @@
 		84110779201F50ED00051719 /* StoryboardIdentifierHandlerType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84110778201F50ED00051719 /* StoryboardIdentifierHandlerType.swift */; };
 		8411077C201F541E00051719 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8411077B201F541E00051719 /* RootViewController.swift */; };
 		8411077F201F56B900051719 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8411077E201F56B900051719 /* Login.storyboard */; };
-		84110791201F56E000051719 /* LoginContracts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84110784201F56E000051719 /* LoginContracts.swift */; };
-		84110792201F56E000051719 /* LoginAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84110786201F56E000051719 /* LoginAPI.swift */; };
-		84110793201F56E000051719 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84110787201F56E000051719 /* LoginController.swift */; };
-		84110794201F56E000051719 /* LoginModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84110789201F56E000051719 /* LoginModels.swift */; };
-		84110795201F56E000051719 /* LoginRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8411078B201F56E000051719 /* LoginRouter.swift */; };
-		84110796201F56E000051719 /* LoginSBControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8411078D201F56E000051719 /* LoginSBControl.swift */; };
-		84110797201F56E000051719 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8411078E201F56E000051719 /* LoginViewController.swift */; };
-		84110798201F56E000051719 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84110790201F56E000051719 /* LoginViewModel.swift */; };
+		843541512021DECD00AE5190 /* ZcoCoreData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843541502021DECD00AE5190 /* ZcoCoreData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -83,7 +74,6 @@
 		68B8F0802017F51500074081 /* FontExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FontExtension.swift; sourceTree = "<group>"; };
 		68B8F0812017F51500074081 /* NotificationExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationExtension.swift; sourceTree = "<group>"; };
 		68B8F0822017F51500074081 /* StringExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
-		68B8F0832017F51500074081 /* TextFieldExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextFieldExtension.swift; sourceTree = "<group>"; };
 		68B8F0842017F51500074081 /* UserDefaultsEtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDefaultsEtension.swift; sourceTree = "<group>"; };
 		68B8F0872017F51500074081 /* BititReelNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BititReelNavigationController.swift; sourceTree = "<group>"; };
 		68B8F0882017F51500074081 /* BLTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BLTextField.swift; sourceTree = "<group>"; };
@@ -93,7 +83,6 @@
 		68B8F08F2017F51500074081 /* Logging.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Logging.swift; sourceTree = "<group>"; };
 		68B8F0912017F51500074081 /* ZCOKeyboardManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZCOKeyboardManager.swift; sourceTree = "<group>"; };
 		68B8F0932017F51500074081 /* NSManagedObjectHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSManagedObjectHelper.swift; sourceTree = "<group>"; };
-		68B8F0942017F51500074081 /* ZcoCoreDataHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZcoCoreDataHelper.swift; sourceTree = "<group>"; };
 		68B8F0962017F51500074081 /* MOError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MOError.swift; sourceTree = "<group>"; };
 		68B8F0982017F51500074081 /* ApplicationExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApplicationExtension.swift; sourceTree = "<group>"; };
 		68B8F0992017F51500074081 /* DateExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateExtension.swift; sourceTree = "<group>"; };
@@ -130,14 +119,7 @@
 		84110778201F50ED00051719 /* StoryboardIdentifierHandlerType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryboardIdentifierHandlerType.swift; sourceTree = "<group>"; };
 		8411077B201F541E00051719 /* RootViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
 		8411077E201F56B900051719 /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
-		84110784201F56E000051719 /* LoginContracts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginContracts.swift; sourceTree = "<group>"; };
-		84110786201F56E000051719 /* LoginAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginAPI.swift; sourceTree = "<group>"; };
-		84110787201F56E000051719 /* LoginController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
-		84110789201F56E000051719 /* LoginModels.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginModels.swift; sourceTree = "<group>"; };
-		8411078B201F56E000051719 /* LoginRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginRouter.swift; sourceTree = "<group>"; };
-		8411078D201F56E000051719 /* LoginSBControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginSBControl.swift; sourceTree = "<group>"; };
-		8411078E201F56E000051719 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
-		84110790201F56E000051719 /* LoginViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		843541502021DECD00AE5190 /* ZcoCoreData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZcoCoreData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -216,7 +198,6 @@
 				68B8F0802017F51500074081 /* FontExtension.swift */,
 				68B8F0812017F51500074081 /* NotificationExtension.swift */,
 				68B8F0822017F51500074081 /* StringExtension.swift */,
-				68B8F0832017F51500074081 /* TextFieldExtension.swift */,
 				68B8F0842017F51500074081 /* UserDefaultsEtension.swift */,
 			);
 			path = Extensions;
@@ -270,8 +251,8 @@
 		68B8F0922017F51500074081 /* Core Data */ = {
 			isa = PBXGroup;
 			children = (
+				843541502021DECD00AE5190 /* ZcoCoreData.swift */,
 				68B8F0932017F51500074081 /* NSManagedObjectHelper.swift */,
-				68B8F0942017F51500074081 /* ZcoCoreDataHelper.swift */,
 			);
 			path = "Core Data";
 			sourceTree = "<group>";
@@ -434,73 +415,9 @@
 		8411077D201F56A400051719 /* Login */ = {
 			isa = PBXGroup;
 			children = (
-				84110782201F56E000051719 /* Login */,
 				8411077E201F56B900051719 /* Login.storyboard */,
 			);
 			path = Login;
-			sourceTree = "<group>";
-		};
-		84110782201F56E000051719 /* Login */ = {
-			isa = PBXGroup;
-			children = (
-				84110783201F56E000051719 /* Contracts */,
-				84110785201F56E000051719 /* Controller */,
-				84110788201F56E000051719 /* Models */,
-				8411078A201F56E000051719 /* Router */,
-				8411078C201F56E000051719 /* UI */,
-				8411078F201F56E000051719 /* View Models */,
-			);
-			path = Login;
-			sourceTree = "<group>";
-		};
-		84110783201F56E000051719 /* Contracts */ = {
-			isa = PBXGroup;
-			children = (
-				84110784201F56E000051719 /* LoginContracts.swift */,
-			);
-			path = Contracts;
-			sourceTree = "<group>";
-		};
-		84110785201F56E000051719 /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-				84110786201F56E000051719 /* LoginAPI.swift */,
-				84110787201F56E000051719 /* LoginController.swift */,
-			);
-			path = Controller;
-			sourceTree = "<group>";
-		};
-		84110788201F56E000051719 /* Models */ = {
-			isa = PBXGroup;
-			children = (
-				84110789201F56E000051719 /* LoginModels.swift */,
-			);
-			path = Models;
-			sourceTree = "<group>";
-		};
-		8411078A201F56E000051719 /* Router */ = {
-			isa = PBXGroup;
-			children = (
-				8411078B201F56E000051719 /* LoginRouter.swift */,
-			);
-			path = Router;
-			sourceTree = "<group>";
-		};
-		8411078C201F56E000051719 /* UI */ = {
-			isa = PBXGroup;
-			children = (
-				8411078D201F56E000051719 /* LoginSBControl.swift */,
-				8411078E201F56E000051719 /* LoginViewController.swift */,
-			);
-			path = UI;
-			sourceTree = "<group>";
-		};
-		8411078F201F56E000051719 /* View Models */ = {
-			isa = PBXGroup;
-			children = (
-				84110790201F56E000051719 /* LoginViewModel.swift */,
-			);
-			path = "View Models";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -582,16 +499,15 @@
 				68F26890200EA95C001BD15C /* BaseViewController.swift in Sources */,
 				68B8F0E02017F51500074081 /* TableView+Dequeuing.swift in Sources */,
 				68B8F0CE2017F51500074081 /* ApplicationExtension.swift in Sources */,
-				84110791201F56E000051719 /* LoginContracts.swift in Sources */,
 				68B8F0C92017F51500074081 /* Logging.swift in Sources */,
 				68B8F0D62017F51500074081 /* Networking.swift in Sources */,
-				84110795201F56E000051719 /* LoginRouter.swift in Sources */,
 				68AB3380201AB6DA006AC715 /* Fonts.swift in Sources */,
 				68B8F0BF2017F51500074081 /* FontExtension.swift in Sources */,
 				68B8F0B92017F51500074081 /* ArrowView.swift in Sources */,
 				68B8F0DB2017F51500074081 /* Result.swift in Sources */,
 				68B8F0D82017F51500074081 /* Parser.swift in Sources */,
 				68B8F0C02017F51500074081 /* NotificationExtension.swift in Sources */,
+				843541512021DECD00AE5190 /* ZcoCoreData.swift in Sources */,
 				68B8F0CF2017F51500074081 /* DateExtension.swift in Sources */,
 				68B8F0D02017F51500074081 /* NumberExtensions.swift in Sources */,
 				68B8F0BD2017F51500074081 /* ColorExtension.swift in Sources */,
@@ -601,33 +517,25 @@
 				68B8F0B72017F51500074081 /* AppCommon.swift in Sources */,
 				68B8F0BA2017F51500074081 /* OrangeArrowView.swift in Sources */,
 				68B8F0CA2017F51500074081 /* ZCOKeyboardManager.swift in Sources */,
-				84110793201F56E000051719 /* LoginController.swift in Sources */,
 				68B8F0D12017F51500074081 /* StringExtensions.swift in Sources */,
 				68B8F0C42017F51500074081 /* BititReelNavigationController.swift in Sources */,
 				68B8F0C82017F51500074081 /* GlobalConstants.swift in Sources */,
 				68B8F0CB2017F51500074081 /* NSManagedObjectHelper.swift in Sources */,
 				68B8F0D32017F51500074081 /* UIViewControllerExtension.swift in Sources */,
 				68B8F0D22017F51500074081 /* UIScrollViewExtension.swift in Sources */,
-				68B8F0C22017F51500074081 /* TextFieldExtension.swift in Sources */,
 				68B8F0C72017F51500074081 /* OrangeButton.swift in Sources */,
 				68AB337F201AB6DA006AC715 /* Colors.swift in Sources */,
-				84110794201F56E000051719 /* LoginModels.swift in Sources */,
-				84110792201F56E000051719 /* LoginAPI.swift in Sources */,
 				68B8F0C52017F51500074081 /* BLTextField.swift in Sources */,
 				68F26879200EA8CF001BD15C /* AppDelegate.swift in Sources */,
 				84110776201F506200051719 /* SplashViewController.swift in Sources */,
 				68F2688F200EA95C001BD15C /* BaseNavigation.swift in Sources */,
-				68B8F0CC2017F51500074081 /* ZcoCoreDataHelper.swift in Sources */,
 				68B8F0E12017F51500074081 /* TableViewDataSource.swift in Sources */,
-				84110797201F56E000051719 /* LoginViewController.swift in Sources */,
 				68B8F0CD2017F51500074081 /* MOError.swift in Sources */,
 				68B8F0C62017F51500074081 /* GrayButton.swift in Sources */,
 				68B8F0D52017F51500074081 /* JSONSerializable.swift in Sources */,
 				68B8F0C12017F51500074081 /* StringExtension.swift in Sources */,
-				84110796201F56E000051719 /* LoginSBControl.swift in Sources */,
 				68B8F0BE2017F51500074081 /* DateTimeExtension.swift in Sources */,
 				68B8F0DC2017F51500074081 /* CellConfigurable.swift in Sources */,
-				84110798201F56E000051719 /* LoginViewModel.swift in Sources */,
 				68B8F0DF2017F51500074081 /* PickerDataSource.swift in Sources */,
 				68B8F0C32017F51500074081 /* UserDefaultsEtension.swift in Sources */,
 				68B8F0E52017FD3E00074081 /* Reachability.m in Sources */,

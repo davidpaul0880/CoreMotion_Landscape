@@ -9,9 +9,9 @@
 import Foundation
 import CoreData
 
-final class ZcoCoreDataHelper {
+final class ZcoCoreData {
 
-    static let sharedInstance = ZcoCoreDataHelper()
+    static let shared = ZcoCoreData()
     private init() {
     }
     func performForegroundAsyncTask(_ block: @escaping (NSManagedObjectContext) -> Void) {
