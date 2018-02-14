@@ -1,9 +1,9 @@
 //
-//  BODFontExtension.swift
-//  bitreel
+//  FontExtension.swift
+//  JPulikkottil
 //
-//  Created by ZCo Engg Dept on 19/04/16.
-//  Copyright © 2016 Beauty On Demand. All rights reserved.
+//  Created by Jijo Pulikkottil on 19/04/16.
+//  Copyright © 2017 JPulikkottil. All rights reserved.
 //
 
 import Foundation

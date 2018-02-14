@@ -1,8 +1,8 @@
 //
-//  BODNetworking.swift
-//  bitreel
+//  Networking.swift
+//  JPulikkottil
 //
-//  Created by ZCO Engineer on 07/04/16.
+//  Created by Jijo Pulikkottil on 07/04/16.
 //  Copyright © 2016 MOPL. All rights reserved.
 //
 

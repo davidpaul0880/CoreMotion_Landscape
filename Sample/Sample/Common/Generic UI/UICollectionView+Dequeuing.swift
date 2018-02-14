@@ -1,9 +1,9 @@
 //
 //  UICollectionView+Dequeuing.swift
-//  bitreel
+//  JPulikkottil
 //
-//  Created by ZCo Engg Dept on 02/05/17.
-//  Copyright © 2017 bitreel. All rights reserved.
+//  Created by Jijo Pulikkottil on 02/05/17.
+//  Copyright © 2017 JPulikkottil. All rights reserved.
 //
 
 import Foundation

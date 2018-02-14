@@ -1,9 +1,9 @@
 //
 //  DateTimeExtension.swift
-//  BitReel
+//  JPulikkottil
 //
 //  Created by deepak.palangadan on 24/11/17.
-//  Copyright © 2017 bitreel. All rights reserved.
+//  Copyright © 2017 JPulikkottil. All rights reserved.
 //
 
 import Foundation

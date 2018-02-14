@@ -1,6 +1,6 @@
 //
 //  BaseViewController.swift
-//  bitreel
+//  JPulikkottil
 //
 //  Created by jijo pulikkottil on 29/03/17.
 //  Copyright © 2017 jijo. All rights reserved.

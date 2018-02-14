@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Login View Controller-->
+        <scene sceneID="PJl-cC-u2Q">
+            <objects>
+                <viewController storyboardIdentifier="LoginViewController" id="VN8-mu-qhZ" customClass="LoginViewController" customModule="Sample" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="qQh-ea-pEj">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eLL-Kc-ir7">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sDl-2S-Lg1">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="688"/>
+                                        <subviews>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="User Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zCd-X6-4eD" customClass="SkyFloatingLabelTextField" customModule="Sample" customModuleProvider="target">
+                                                <rect key="frame" x="40" y="326" width="295" height="35"/>
+                                                <color key="tintColor" red="0.031372549020000001" green="0.45098039220000002" blue="0.56078431370000004" alpha="1" colorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="35" id="kea-6G-SN1"/>
+                                                </constraints>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="lineColor">
+                                                        <color key="value" red="0.91764705879999997" green="0.25882352939999997" blue="0.1960784314" alpha="1" colorSpace="calibratedRGB"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="selectedLineColor">
+                                                        <color key="value" red="0.91764705879999997" green="0.25882352939999997" blue="0.1960784314" alpha="1" colorSpace="calibratedRGB"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="selectedLineHeight">
+                                                        <real key="value" value="1"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="lineHeight">
+                                                        <real key="value" value="1"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="upv-RU-ygw" customClass="SkyFloatingLabelTextField" customModule="Sample" customModuleProvider="target">
+                                                <rect key="frame" x="40" y="386" width="295" height="35"/>
+                                                <color key="tintColor" red="0.031372549020000001" green="0.45098039220000002" blue="0.56078431370000004" alpha="1" colorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="35" id="s9A-u6-F3G"/>
+                                                </constraints>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="lineColor">
+                                                        <color key="value" red="0.91764705879999997" green="0.25882352939999997" blue="0.1960784314" alpha="1" colorSpace="calibratedRGB"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </textField>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="upv-RU-ygw" secondAttribute="trailing" constant="40" id="01C-JL-v5B"/>
+                                            <constraint firstItem="upv-RU-ygw" firstAttribute="leading" secondItem="sDl-2S-Lg1" secondAttribute="leading" constant="40" id="FdP-IZ-XU6"/>
+                                            <constraint firstItem="zCd-X6-4eD" firstAttribute="centerY" secondItem="sDl-2S-Lg1" secondAttribute="centerY" id="QhO-SG-zku"/>
+                                            <constraint firstAttribute="trailing" secondItem="zCd-X6-4eD" secondAttribute="trailing" constant="40" id="TF3-lP-MiT"/>
+                                            <constraint firstItem="zCd-X6-4eD" firstAttribute="leading" secondItem="sDl-2S-Lg1" secondAttribute="leading" constant="40" id="dJL-nz-ccW"/>
+                                            <constraint firstItem="upv-RU-ygw" firstAttribute="top" secondItem="zCd-X6-4eD" secondAttribute="bottom" constant="25" id="m52-FR-qLr"/>
+                                            <constraint firstAttribute="bottom" secondItem="upv-RU-ygw" secondAttribute="bottom" constant="267" id="pIO-fQ-3M5"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="sDl-2S-Lg1" secondAttribute="trailing" id="1rW-ZN-7eH"/>
+                                    <constraint firstItem="sDl-2S-Lg1" firstAttribute="leading" secondItem="eLL-Kc-ir7" secondAttribute="leading" id="F4u-8f-zOO"/>
+                                    <constraint firstItem="sDl-2S-Lg1" firstAttribute="top" secondItem="eLL-Kc-ir7" secondAttribute="top" id="HwF-YR-Vmd"/>
+                                    <constraint firstItem="sDl-2S-Lg1" firstAttribute="width" secondItem="eLL-Kc-ir7" secondAttribute="width" id="dcX-dv-hYA"/>
+                                    <constraint firstAttribute="bottom" secondItem="sDl-2S-Lg1" secondAttribute="bottom" id="tcY-4K-Cyu"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.67450980390000004" green="0.74509803919999995" blue="0.78823529410000004" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="eLL-Kc-ir7" firstAttribute="leading" secondItem="KW7-W1-LQv" secondAttribute="leading" id="3OX-C1-XQ1"/>
+                            <constraint firstItem="eLL-Kc-ir7" firstAttribute="top" secondItem="qQh-ea-pEj" secondAttribute="top" id="S4Z-pa-Gz8"/>
+                            <constraint firstItem="eLL-Kc-ir7" firstAttribute="trailing" secondItem="KW7-W1-LQv" secondAttribute="trailing" id="q1M-T4-vNv"/>
+                            <constraint firstItem="eLL-Kc-ir7" firstAttribute="bottom" secondItem="KW7-W1-LQv" secondAttribute="bottom" id="vZO-NM-WEc"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="KW7-W1-LQv"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ctY-la-1Fo" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-220" y="158.77061469265368"/>
+        </scene>
+    </scenes>
+</document>

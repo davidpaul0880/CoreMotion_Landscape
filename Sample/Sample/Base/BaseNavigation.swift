@@ -1,6 +1,6 @@
 //
 //  BaseNavigation.swift
-//  bitreel
+//  JPulikkottil
 //
 //  Created by jijo pulikkottil on 22/06/17.
 //  Copyright © 2017 jijo. All rights reserved.

@@ -1,17 +1,17 @@
 //
-//  ZcoCoreDataHelper.swift
-//  BitReel
+//  CoreDataHelper.swift
+//  JPulikkottil
 //
 //  Created by Admin on 23/10/17.
-//  Copyright © 2017 bitreel. All rights reserved.
+//  Copyright © 2017 JPulikkottil. All rights reserved.
 //
 
 import Foundation
 import CoreData
 
-final class ZcoCoreData {
+final class CoreDataHelper {
 
-    static let shared = ZcoCoreData()
+    static let shared = CoreDataHelper()
     private init() {
     }
     func performForegroundAsyncTask(_ block: @escaping (NSManagedObjectContext) -> Void) {
@@ -46,7 +46,7 @@ final class ZcoCoreData {
          application to it. This property is optional since there are legitimate
          error conditions that could cause the creation of the store to fail.
          */
-        let container = NSPersistentContainer(name: "BitReel")
+        let container = NSPersistentContainer(name: "JPulikkottil")
         container.loadPersistentStores(completionHandler: { (_, error) in
             if let error = error as NSError? {
                 // Replace this implementation with code to handle the error appropriately.

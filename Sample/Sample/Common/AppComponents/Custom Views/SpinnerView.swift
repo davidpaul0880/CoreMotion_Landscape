@@ -1,9 +1,9 @@
 //
-//  BODSpinnerView.swift
-//  bitreel
+//  SpinnerView.swift
+//  JPulikkottil
 //
-//  Created by ZCO Engineering Dept. on 18/04/16.
-//  Copyright © 2016 Beauty On Demand. All rights reserved.
+//  Created by Jijo Pulikkottil on 18/04/16.
+//  Copyright © 2017 JPulikkottil. All rights reserved.
 //
 
 import UIKit

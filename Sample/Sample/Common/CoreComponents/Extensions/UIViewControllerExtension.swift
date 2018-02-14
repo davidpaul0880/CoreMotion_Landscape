@@ -1,9 +1,9 @@
 //
 //  UIViewControllerExtension.swift
-//  BitReel
+//  JPulikkottil
 //
 //  Created by Admin on 19/10/17.
-//  Copyright © 2017 bitreel. All rights reserved.
+//  Copyright © 2017 JPulikkottil. All rights reserved.
 //
 
 import Foundation

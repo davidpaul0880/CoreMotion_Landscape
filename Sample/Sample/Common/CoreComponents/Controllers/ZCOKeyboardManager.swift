@@ -1,16 +1,16 @@
 //
-//  ZCOKeyboardManager.swift
-//  bitreel
+//  KeyboardManager.swift
+//  JPulikkottil
 //
-//  Created by ZCo Engg Dept on 20/04/16.
-//  Copyright © 2016 zco. All rights reserved.
+//  Created by Jijo Pulikkottil on 20/04/16.
+//  Copyright © 2017 JPulikkottil All rights reserved.
 //
 import Foundation
 import UIKit
 
 /*
  It need Xcode 7.3 to compile
- //Following is the sample class to descripbe how to use ZCOKeyboardManager
+ //Following is the sample class to descripbe how to use KeyboardManager
  class ExampleViewController:UIViewController, UITextFieldDelegate {
  
  
@@ -25,7 +25,7 @@ import UIKit
  --------textfield2
  
  
- var kbManager: ZCOKeyboardManager!
+ var kbManager: KeyboardManager!
  @IBOutlet weak var scrollView: UIScrollView!
  
  override func viewDidLoad() {
@@ -33,7 +33,7 @@ import UIKit
  // to fix the empty space (64 pt) on top. if you not set  this in storyboard
  self.automaticallyAdjustsScrollViewInsets = false
  
- self.kbManager = ZCOKeyboardManager(ContainerScrollView: scrollView, SetTextFieldDelegateWith: self, SetTextViewDelegateWith: nil, DissmissTapOutside: false)
+ self.kbManager = KeyboardManager(ContainerScrollView: scrollView, SetTextFieldDelegateWith: self, SetTextViewDelegateWith: nil, DissmissTapOutside: false)
  
  }
  
@@ -74,7 +74,7 @@ struct KeyBoardTolbarAppearence {
     var titleColor: UIColor
 }
 
-extension ZCOKeyboard: UITextFieldDelegate {
+extension Keyboard: UITextFieldDelegate {
     // became first responder
     func textFieldDidBeginEditing(_ textField: UITextField) {
         self.didBeginEditing(textField, isShowToolbar: false)
@@ -91,7 +91,7 @@ protocol KBToolbarDelegate: class {
 protocol KBReloadDelegate: class {
     func keyboardReloadedOnScrollView(_ scrollView: UIScrollView)
 }
-protocol ZCOKeyboardManager {
+protocol KeyboardManager {
     var adjustHeight: CGFloat {get set}
     weak var activeTextField: UIView? {get}
     weak var toolbarDelegate: KBToolbarDelegate? {get set}
@@ -106,7 +106,7 @@ protocol ZCOKeyboardManager {
     var useTagvalue: Bool {get set} //we need to access this if there is textfield in scrollview and a tableview in scrollview
     var keyboardHeight: CGFloat? {get}
 }
-class ZCOKeyboard: NSObject, ZCOKeyboardManager {
+class Keyboard: NSObject, KeyboardManager {
 
     var keyboardHeight: CGFloat?
     weak var toolbarDelegate: KBToolbarDelegate?
@@ -234,16 +234,16 @@ class ZCOKeyboard: NSObject, ZCOKeyboardManager {
     }
     func customizedToolBar(_ toolBar: UIToolbar) {
         let label = UILabel(frame: CGRect(origin: CGPoint.zero, size: CGSize(width: 200, height: 50)))
-        label.font = ZCOKeyboard.toolbarAppearence.titleFont
-        label.textColor = ZCOKeyboard.toolbarAppearence.titleColor
+        label.font = Keyboard.toolbarAppearence.titleFont
+        label.textColor = Keyboard.toolbarAppearence.titleColor
         let toolBarTitle = UIBarButtonItem(customView: label)
         let frmae = UIScreen.main.bounds //main.applicationFrame
         toolBar.frame = CGRect(x: 0, y: 0, width: frmae.size.width, height: 50)
         toolBar.barStyle = UIBarStyle.default
-        toolBar.barTintColor = ZCOKeyboard.toolbarAppearence.barTintColor
+        toolBar.barTintColor = Keyboard.toolbarAppearence.barTintColor
         let doneButton =  UIBarButtonItem(title: "keyboard.done".localized(), style: UIBarButtonItemStyle.plain, target: self, action: #selector(tappedDoneButton))
         let barButtonAppearenceDict: [NSAttributedStringKey: AnyObject] = [
-            NSAttributedStringKey.foregroundColor: ZCOKeyboard.toolbarAppearence.titleColor
+            NSAttributedStringKey.foregroundColor: Keyboard.toolbarAppearence.titleColor
         ]
         doneButton.setTitleTextAttributes(barButtonAppearenceDict, for: .normal)
         toolBar.items = [

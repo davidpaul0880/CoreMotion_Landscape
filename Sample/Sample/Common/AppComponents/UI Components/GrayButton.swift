@@ -1,9 +1,9 @@
 //
 //  GrayButton.swift
-//  BitReel
+//  JPulikkottil
 //
 //  Created by Aneesha Azeez on 10/17/17.
-//  Copyright © 2017 bitreel. All rights reserved.
+//  Copyright © 2017 JPulikkottil. All rights reserved.
 //
 
 import UIKit

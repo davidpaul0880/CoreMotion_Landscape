@@ -1,9 +1,9 @@
 //
-//  ZCONumberExtensions.swift
-//  bitreel
+//  NumberExtensions.swift
+//  JPulikkottil
 //
-//  Created by ZCo Engg Dept on 16/08/16.
-//  Copyright © 2016 zco. All rights reserved.
+//  Created by Jijo Pulikkottil on 16/08/16.
+//  Copyright © 2017 JPulikkottil All rights reserved.
 //
 
 import Foundation

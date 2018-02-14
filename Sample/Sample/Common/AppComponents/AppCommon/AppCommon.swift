@@ -2,8 +2,8 @@
 //  Common.swift
 //  sample
 //
-//  Created by ZCo Engg Dept on 24/08/16.
-//  Copyright © 2016 zco. All rights reserved.
+//  Created by Jijo Pulikkottil on 24/08/16.
+//  Copyright © 2017 JPulikkottil All rights reserved.
 //
 
 import Foundation
@@ -32,11 +32,11 @@ class AppCommon {
         UIView.animate(withDuration: 0.3, animations: {
             controllerToDismiss?.view.alpha = 0
         }) { (_) in
-            let loginController = LoginViewController.getController()
-            LoginRouter.addContracts(loginController)
-            //transition(fromVC: viewController, animationDuration: 0.5, toVC: loginController)
-            let appdelegate = UIApplication.shared.delegate as! AppDelegate
-            appdelegate.window?.rootViewController = loginController
+//            let loginController = LoginViewController.getController()
+//            LoginRouter.addContracts(loginController)
+//            //transition(fromVC: viewController, animationDuration: 0.5, toVC: loginController)
+//            let appdelegate = UIApplication.shared.delegate as! AppDelegate
+//            appdelegate.window?.rootViewController = loginController
         }
     }
     func launchHomeByRemove(_ controllerToDismiss: UIViewController?) {

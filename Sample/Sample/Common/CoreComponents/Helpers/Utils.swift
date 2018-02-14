@@ -2,7 +2,7 @@
 //  Utils.swift
 //  proximeet
 //
-//  Created by ZCo Engg Dept on 18/01/17.
+//  Created by Jijo Pulikkottil on 18/01/17.
 //  Copyright © 2017 inrangecontacts. All rights reserved.
 //
 

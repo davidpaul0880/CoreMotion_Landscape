@@ -2,8 +2,8 @@
 //  RootViewController.swift
 //  proximeet
 //
-//  Created by ZCo Engg Dept on 24/08/16.
-//  Copyright © 2016 zco. All rights reserved.
+//  Created by Jijo Pulikkottil on 24/08/16.
+//  Copyright © 2016 JPulikkottil. All rights reserved.
 //
 
 import UIKit
