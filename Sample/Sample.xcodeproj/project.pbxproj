@@ -60,6 +60,8 @@
 		84110779201F50ED00051719 /* StoryboardIdentifierHandlerType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84110778201F50ED00051719 /* StoryboardIdentifierHandlerType.swift */; };
 		8411077C201F541E00051719 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8411077B201F541E00051719 /* RootViewController.swift */; };
 		843541512021DECD00AE5190 /* ZcoCoreData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843541502021DECD00AE5190 /* ZcoCoreData.swift */; };
+		84818A0B205B766D00E332C8 /* NetworkConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84818A0A205B766D00E332C8 /* NetworkConfig.swift */; };
+		84818A0D205B768600E332C8 /* CoreDataConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84818A0C205B768600E332C8 /* CoreDataConfig.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -120,6 +122,8 @@
 		84110778201F50ED00051719 /* StoryboardIdentifierHandlerType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryboardIdentifierHandlerType.swift; sourceTree = "<group>"; };
 		8411077B201F541E00051719 /* RootViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
 		843541502021DECD00AE5190 /* ZcoCoreData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZcoCoreData.swift; sourceTree = "<group>"; };
+		84818A0A205B766D00E332C8 /* NetworkConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkConfig.swift; sourceTree = "<group>"; };
+		84818A0C205B768600E332C8 /* CoreDataConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataConfig.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -155,6 +159,7 @@
 		68B8F0722017F51500074081 /* AppComponents */ = {
 			isa = PBXGroup;
 			children = (
+				84818A09205B766D00E332C8 /* Configurations */,
 				68B8F0732017F51500074081 /* AppCommon */,
 				68B8F0762017F51500074081 /* Custom Views */,
 				68B8F07A2017F51500074081 /* Helpers */,
@@ -428,6 +433,15 @@
 			path = Root;
 			sourceTree = "<group>";
 		};
+		84818A09205B766D00E332C8 /* Configurations */ = {
+			isa = PBXGroup;
+			children = (
+				84818A0A205B766D00E332C8 /* NetworkConfig.swift */,
+				84818A0C205B768600E332C8 /* CoreDataConfig.swift */,
+			);
+			path = Configurations;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -438,6 +452,7 @@
 				68F26871200EA8CF001BD15C /* Sources */,
 				68F26872200EA8CF001BD15C /* Frameworks */,
 				68F26873200EA8CF001BD15C /* Resources */,
+				84818A08205B744500E332C8 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -461,7 +476,7 @@
 					68F26874200EA8CF001BD15C = {
 						CreatedOnToolsVersion = 9.1;
 						LastSwiftMigration = 0910;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
 					};
 				};
 			};
@@ -496,6 +511,22 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		84818A08205B744500E332C8 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\nswiftlint\nelse\necho \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		68F26871200EA8CF001BD15C /* Sources */ = {
@@ -543,11 +574,13 @@
 				68B8F0D52017F51500074081 /* JSONSerializable.swift in Sources */,
 				68B8F0C12017F51500074081 /* StringExtension.swift in Sources */,
 				68B8F0BE2017F51500074081 /* DateTimeExtension.swift in Sources */,
+				84818A0D205B768600E332C8 /* CoreDataConfig.swift in Sources */,
 				68B8F0DC2017F51500074081 /* CellConfigurable.swift in Sources */,
 				68B8F0DF2017F51500074081 /* PickerDataSource.swift in Sources */,
 				68B8F0C32017F51500074081 /* UserDefaultsEtension.swift in Sources */,
 				68B8F0E52017FD3E00074081 /* Reachability.m in Sources */,
 				68B8F0DA2017F51500074081 /* ReachabilityManager.swift in Sources */,
+				84818A0B205B766D00E332C8 /* NetworkConfig.swift in Sources */,
 				84110779201F50ED00051719 /* StoryboardIdentifierHandlerType.swift in Sources */,
 				68B8F0BB2017F51500074081 /* SpinnerView.swift in Sources */,
 				68B8F0DE2017F51500074081 /* CoreDataTableViewDataSource.swift in Sources */,
@@ -688,12 +721,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 9AYNB595H6;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = Sample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.jijo.Sample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "Sample/Common/CoreComponents/Reachability/Sample-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
@@ -706,12 +740,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 9AYNB595H6;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = Sample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.jijo.Sample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "Sample/Common/CoreComponents/Reachability/Sample-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

@@ -9,10 +9,26 @@
 import Foundation
 import CoreData
 
+protocol CoreDataConfig {
+    func getDataModelName() -> String
+}
+
 final class CoreDataHelper {
 
     static let shared = CoreDataHelper()
     private init() {
+    }
+    lazy var dataModelName: String = {
+        if let appName = Bundle.main.object(forInfoDictionaryKey: "CFBundleName") as? String {
+            return appName
+        }
+        return "appName"
+    }()
+    func getDatabaseName() -> String {
+        if let config = self as? CoreDataConfig {
+            return config.getDataModelName()
+        }
+        return dataModelName
     }
     func performForegroundAsyncTask(_ block: @escaping (NSManagedObjectContext) -> Void) {
         self.viewContext.perform {
@@ -46,7 +62,7 @@ final class CoreDataHelper {
          application to it. This property is optional since there are legitimate
          error conditions that could cause the creation of the store to fail.
          */
-        let container = NSPersistentContainer(name: "JPulikkottil")
+        let container = NSPersistentContainer(name: getDatabaseName())
         container.loadPersistentStores(completionHandler: { (_, error) in
             if let error = error as NSError? {
                 // Replace this implementation with code to handle the error appropriately.
