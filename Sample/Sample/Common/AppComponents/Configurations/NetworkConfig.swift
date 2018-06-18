@@ -2,8 +2,8 @@
 //  NetworkConfig.swift
 //  sample
 //
-//  Created by ZCo Engg Dept on 25/08/16.
-//  Copyright © 2016 zco. All rights reserved.
+//  Created by Jijo Pulikkottil on 25/08/16.
+//  Copyright © 2016 Jijo Pulikkottil. All rights reserved.
 //
 
 import Foundation
@@ -51,7 +51,7 @@ class NetworkConfig {
         }
     }
 
-    static var networkingAPI: NetworkingAPI {
+    func networkingAPI() -> NetworkingAPI {
         return Networking(baseURL: URL(string: NetworkConfig.baseURL())!, session: URLSession(configuration: URLSessionConfiguration.default))
     }
 

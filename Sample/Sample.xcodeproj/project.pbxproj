@@ -25,7 +25,6 @@
 		68B8F0C72017F51500074081 /* OrangeButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68B8F08A2017F51500074081 /* OrangeButton.swift */; };
 		68B8F0C82017F51500074081 /* GlobalConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68B8F08E2017F51500074081 /* GlobalConstants.swift */; };
 		68B8F0C92017F51500074081 /* Logging.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68B8F08F2017F51500074081 /* Logging.swift */; };
-		68B8F0CA2017F51500074081 /* ZCOKeyboardManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68B8F0912017F51500074081 /* ZCOKeyboardManager.swift */; };
 		68B8F0CB2017F51500074081 /* NSManagedObjectHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68B8F0932017F51500074081 /* NSManagedObjectHelper.swift */; };
 		68B8F0CD2017F51500074081 /* MOError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68B8F0962017F51500074081 /* MOError.swift */; };
 		68B8F0CE2017F51500074081 /* ApplicationExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68B8F0982017F51500074081 /* ApplicationExtension.swift */; };
@@ -59,9 +58,10 @@
 		84110776201F506200051719 /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84110775201F506200051719 /* SplashViewController.swift */; };
 		84110779201F50ED00051719 /* StoryboardIdentifierHandlerType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84110778201F50ED00051719 /* StoryboardIdentifierHandlerType.swift */; };
 		8411077C201F541E00051719 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8411077B201F541E00051719 /* RootViewController.swift */; };
-		843541512021DECD00AE5190 /* ZcoCoreData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843541502021DECD00AE5190 /* ZcoCoreData.swift */; };
 		84818A0B205B766D00E332C8 /* NetworkConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84818A0A205B766D00E332C8 /* NetworkConfig.swift */; };
 		84818A0D205B768600E332C8 /* CoreDataConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84818A0C205B768600E332C8 /* CoreDataConfig.swift */; };
+		84EBCA70208DF47E0055A336 /* KeyboardManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EBCA6F208DF47D0055A336 /* KeyboardManager.swift */; };
+		84F29E362085C7BC00B1A3A8 /* CoreDataHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F29E352085C7BB00B1A3A8 /* CoreDataHelper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -83,7 +83,6 @@
 		68B8F08A2017F51500074081 /* OrangeButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrangeButton.swift; sourceTree = "<group>"; };
 		68B8F08E2017F51500074081 /* GlobalConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GlobalConstants.swift; sourceTree = "<group>"; };
 		68B8F08F2017F51500074081 /* Logging.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Logging.swift; sourceTree = "<group>"; };
-		68B8F0912017F51500074081 /* ZCOKeyboardManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZCOKeyboardManager.swift; sourceTree = "<group>"; };
 		68B8F0932017F51500074081 /* NSManagedObjectHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSManagedObjectHelper.swift; sourceTree = "<group>"; };
 		68B8F0962017F51500074081 /* MOError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MOError.swift; sourceTree = "<group>"; };
 		68B8F0982017F51500074081 /* ApplicationExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApplicationExtension.swift; sourceTree = "<group>"; };
@@ -121,9 +120,10 @@
 		84110775201F506200051719 /* SplashViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
 		84110778201F50ED00051719 /* StoryboardIdentifierHandlerType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryboardIdentifierHandlerType.swift; sourceTree = "<group>"; };
 		8411077B201F541E00051719 /* RootViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
-		843541502021DECD00AE5190 /* ZcoCoreData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZcoCoreData.swift; sourceTree = "<group>"; };
 		84818A0A205B766D00E332C8 /* NetworkConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkConfig.swift; sourceTree = "<group>"; };
 		84818A0C205B768600E332C8 /* CoreDataConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataConfig.swift; sourceTree = "<group>"; };
+		84EBCA6F208DF47D0055A336 /* KeyboardManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyboardManager.swift; sourceTree = "<group>"; };
+		84F29E352085C7BB00B1A3A8 /* CoreDataHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataHelper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -248,7 +248,7 @@
 		68B8F0902017F51500074081 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				68B8F0912017F51500074081 /* ZCOKeyboardManager.swift */,
+				84EBCA6F208DF47D0055A336 /* KeyboardManager.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -256,7 +256,7 @@
 		68B8F0922017F51500074081 /* Core Data */ = {
 			isa = PBXGroup;
 			children = (
-				843541502021DECD00AE5190 /* ZcoCoreData.swift */,
+				84F29E352085C7BB00B1A3A8 /* CoreDataHelper.swift */,
 				68B8F0932017F51500074081 /* NSManagedObjectHelper.swift */,
 			);
 			path = "Core Data";
@@ -546,7 +546,6 @@
 				68B8F0DB2017F51500074081 /* Result.swift in Sources */,
 				68B8F0D82017F51500074081 /* Parser.swift in Sources */,
 				68B8F0C02017F51500074081 /* NotificationExtension.swift in Sources */,
-				843541512021DECD00AE5190 /* ZcoCoreData.swift in Sources */,
 				68B8F0CF2017F51500074081 /* DateExtension.swift in Sources */,
 				68B8F0D02017F51500074081 /* NumberExtensions.swift in Sources */,
 				68B8F0BD2017F51500074081 /* ColorExtension.swift in Sources */,
@@ -554,8 +553,9 @@
 				8411077C201F541E00051719 /* RootViewController.swift in Sources */,
 				68B8F0D42017F51500074081 /* Utils.swift in Sources */,
 				68B8F0B72017F51500074081 /* AppCommon.swift in Sources */,
+				84EBCA70208DF47E0055A336 /* KeyboardManager.swift in Sources */,
 				68B8F0BA2017F51500074081 /* OrangeArrowView.swift in Sources */,
-				68B8F0CA2017F51500074081 /* ZCOKeyboardManager.swift in Sources */,
+				84F29E362085C7BC00B1A3A8 /* CoreDataHelper.swift in Sources */,
 				68B8F0D12017F51500074081 /* StringExtensions.swift in Sources */,
 				68B8F0C42017F51500074081 /* BititReelNavigationController.swift in Sources */,
 				68B8F0C82017F51500074081 /* GlobalConstants.swift in Sources */,
