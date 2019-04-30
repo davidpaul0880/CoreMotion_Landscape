@@ -30,12 +30,19 @@ final class CoreDataHelper {
         }
         return dataModelName
     }
-    func performForegroundAsyncTask(_ block: @escaping (NSManagedObjectContext) -> Void) {
+    func performMainThreadASyncTask(_ block: @escaping (NSManagedObjectContext) -> Void) {
         self.viewContext.perform {
             block(self.viewContext)
         }
     }
-    func performForegroundSyncTask(_ block: (NSManagedObjectContext) -> Void) {
+    func performMainThreadSyncTask(_ block: (NSManagedObjectContext) -> Void) {
+        self.viewContext.performAndWait {
+            block(self.viewContext)
+        }
+    }
+    // execute() should be used within perform. e.g: removeAllObjectsInContext should call from this
+    func executeInMainThreadSyncTask(_ block: (NSManagedObjectContext) -> Void) {
+        assert(Thread.isMainThread)//+20180213
         self.viewContext.performAndWait {
             block(self.viewContext)
         }
